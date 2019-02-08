@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/home'
   get 'users/show'
   get 'posts/destroy'
-   root "pages#home"
+  root "pages#home"
  
   devise_for :users
   resources :users, only: [:show]

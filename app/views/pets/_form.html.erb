@@ -1,0 +1,91 @@
+<div class = "row">
+<div class = "col s6">
+<%= form_for @pet do |f| %>
+<div>
+<%= f.label :name %>
+</div>
+
+<div>
+<%= f.text_field :name  , required: true %>
+</div>
+
+<div>
+<%= f.label :description %>
+</div>
+
+<div>
+<%= f.text_area :description , required: true  %>
+</div>
+
+<div>
+<%= f.label "image " %>
+</div>
+<div>
+<%= f.file_field "image" %>
+</div>
+
+
+<div>
+  <%= f.label :animal_type , "Type" %>
+  <%= f.select :animal_type, ["cat","dog","rabbit"] %>
+</div>
+
+<div >
+    <%= f.label :gender %><br />
+    <%= f.label :gender, "Female", :value => "female"  %>
+    <%= f.radio_button :gender, "female"  %>
+    <%= f.label :gender, "Male", :value => "male" %>
+    <%= f.radio_button :gender, "male" , :checked => "female" %>
+</div>
+
+
+<div>
+<%= f.label :dob %>
+<%= f.text_field :dob   %>
+</div>
+
+<div>
+<%= f.label :city %>
+<%= f.text_field :city  , required: true %>
+</div>
+
+<div>
+<%= f.label :location %>
+<%= f.text_field :location  , required: true %>
+</div>
+
+<div>
+<%= f.label :color%>
+</div>
+
+<div>
+<%= f.text_field :color  %>
+</div>
+
+
+<div>
+<%= f.label :breed%>
+</div>
+
+<div>
+<%= f.text_field :breed  %>
+</div>
+
+
+
+
+
+<div>
+<%= f.label "choose the animal status:"%>
+<%= f.select :status, ['missing', 'found','animals-in-need','for-adoption']%>
+</div>
+
+
+
+
+<div>
+<%= f.submit %>
+</div>
+<% end %>
+</div>
+</div>
