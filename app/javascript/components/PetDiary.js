@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 import Pet from "./Pet";
 import PetPosts from "./PetPosts";
 class PetDiary extends React.Component {
@@ -36,4 +36,4 @@ class PetDiary extends React.Component {
   }
 }
 
-export default PetDiary
+export default PetDiary;

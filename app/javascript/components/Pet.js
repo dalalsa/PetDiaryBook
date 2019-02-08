@@ -1,20 +1,20 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 class Pet extends React.Component {
   render() {
     return (
-      <div className="item">
-        <div className="username">
+      <div>
+        <div>
           {this.props.id}
           <a href={this.props.id}>{this.props.name}</a>
         </div>
         <div>
           kkkk
-          <img className="ui avatar image" src={this.props.imageUrl} />
+          <img src={this.props.imageUrl} />
         </div>
       </div>
     );
   }
 }
 
-export default Pet
+export default Pet;
