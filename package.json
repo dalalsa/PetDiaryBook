@@ -1,5 +1,5 @@
 {
-  "name": "PetDiaryBook",
+  "name": "petdiarybook",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
@@ -7,9 +7,30 @@
     "prop-types": "^15.6.2",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react_ujs": "^2.4.4"
+    "react_ujs": "^2.4.4",
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
-  }
+    "webpack-dev-server": "^3.1.14"
+  },
+  "description": "# App components ![my app](https://i.imgur.com/zLmGdzo.png)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalalsa/PetDiaryBook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalalsa/PetDiaryBook/issues"
+  },
+  "homepage": "https://github.com/dalalsa/PetDiaryBook#readme"
 }
