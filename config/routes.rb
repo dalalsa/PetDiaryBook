@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  get 'users/show'
-  get 'posts/destroy'
+
   root "pages#home"
  
   devise_for :users
@@ -9,5 +7,9 @@ Rails.application.routes.draw do
   resources :pets do 
   resources :posts
   end
+  resources :users do 
+  resources :pets
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+  

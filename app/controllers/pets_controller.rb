@@ -1,6 +1,6 @@
 class PetsController < ApplicationController
   def index
-    @pets = Pet.all
+    @pets = Pet.where(user_id: params[:user_id])
     respond_to do |format|
         format.html
         format.json { render json: @pets }
